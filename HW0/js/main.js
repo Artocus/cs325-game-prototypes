@@ -20,6 +20,7 @@ var badX;
 var badY;
 var playerTurn;
 var playerTurnText;
+var s;
 
 function preload() {
     this.load.image( 'square', 'assets/square.png' );
@@ -27,6 +28,7 @@ function preload() {
 }
 
 function create() {
+    s = this;
     height = 15 //Phaser.Math.Between(1, 20);
     width =  15 //Phaser.Math.Between(1, 20);
 
@@ -97,7 +99,7 @@ function verticleCut(column){
     playerTurnText.setText(`Player ${playerTurn+1}\'s turn`);
 
     if(playerTurn == 1){
-        ai_turn();
+        var timer = s.time.delayedCall(500, ai_turn, [], this);
     }
 }
 
@@ -131,7 +133,7 @@ function horizontalCut(row){
     playerTurnText.setText(`Player ${playerTurn+1}\'s turn`);
     
     if(playerTurn == 1){
-        ai_turn();
+        var timer = s.time.delayedCall(500, ai_turn, [], this);
     }
 }
 
@@ -204,13 +206,13 @@ function ai_turn(){
                 case 1:
                     if(lowerX != 0){
                         var amount = Phaser.Math.Between(1, lowerX);
-                        verticleCut(badX-1);
+                        verticleCut(badX);
                         return;
                     }
                 case 2:
                     if(lowerY != 0){
                         var amount = Phaser.Math.Between(1, lowerY);
-                        horizontalCut(badY-1);
+                        horizontalCut(badY);
                         return;
                     }
                 case 3:
