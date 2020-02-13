@@ -204,25 +204,25 @@ function ai_turn(){
                 case 1:
                     if(lowerX != 0){
                         var amount = Phaser.Math.Between(1, lowerX);
-                        verticleCut(badX-1 - amount);
+                        verticleCut(badX-1);
                         return;
                     }
                 case 2:
                     if(lowerY != 0){
                         var amount = Phaser.Math.Between(1, lowerY);
-                        horizontalCut(badY-1 - amount);
+                        horizontalCut(badY-1);
                         return;
                     }
                 case 3:
                     if(upperX != 0){
                         var amount = Phaser.Math.Between(1, upperX);
-                        verticleCut(badX + amount);
+                        verticleCut(badX);
                         return;
                     }
                 case 4:
                     if(upperY != 0){
                         var amount = Phaser.Math.Between(1, upperY);
-                        horizontalCut(badX + amount);
+                        horizontalCut(badX);
                         return;
                     }
             }
