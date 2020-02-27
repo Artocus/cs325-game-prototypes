@@ -16,6 +16,8 @@ class Music extends Phaser.Scene{
         this.music.setVolume(0.25);
         this.music.setLoop(true);
 
+        console.log(this.cache.text.get('canon_in_d'));
+
         this.highscore = 0;
         this.highscoreText = this.add.bitmapText(800-15, 15, 'atari', `Highscore: ${Math.round(this.highscore)}m`, 24).setOrigin(1, 0);
     }

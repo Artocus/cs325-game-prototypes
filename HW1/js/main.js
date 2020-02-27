@@ -6,7 +6,7 @@ import Game from './Game.js'
 var config = {
 	width: 800,
 	height: 600,
-	type: Phaser.AUTO,
+	type: Phaser.WebGL,
 	parent: 'game',
 };
 

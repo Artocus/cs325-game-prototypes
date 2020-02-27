@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cyberspace Escape</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Cyberspace Escape</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+</li>
+
+<li>
+It's an infinite runner where you must match your color to the blocks to pass through.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+</li>
+
+<li>
+Didn't use the built in phyics, all the movements are handled with as little overhead as possible. Also the game is broken up into scenes, with the music and highscore being in a seperate scene than the main game.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+</li>
+
+<li>
+I learned how to make different scenes in Phaser 3, how to load audio, and how to move sprites around. The hardest part was getting the timing between the ghost moving on a cosine wave and the blocks so that the ghost never crossed the middle of the blocks.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Ghosts: <a href="https://www.pngfind.com/mpng/Tmowoo_pac-man-ghost-sprites-circle-hd-png-download/">Pacman Ghost Sprite Sheet</a></li>
+<li>Background Image: <a href="https://www.wallpaperflare.com/orange-and-blue-grid-pattern-wallpaper-digital-art-tron-artwork-wallpaper-qkojh">orange and blue grid pattern wallpaper</a></li>
+<li>Background Music: <a href="https://www.youtube.com/watch?v=k8zseZaaLHE">Out of Orbit by Garoad</a></li>
+<li>Transform Sound: <a href="https://www.epidemicsound.com/sound-effects/search/?term=glitch">Beep Glitch</a></li>
+<li>Atari Font: <a href="https://github.com/photonstorm/phaser3-examples/tree/master/public/assets/fonts/bitmap">Atari Classic Font</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+</li>
+
+<li>
+I look at this game as a variation on flappy bird. Instead of jumping up and down to fit through gaps, you have to change color to pass through blocks.
+</li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+</li>
+
+<li>
+    It's an infinite runner where you must match your color to pass through the blocks.
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+
+<li>
+Ghost, Flight, Person who is lost
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+
+<li>
+Input: Keyboard, Randomness: A lot, Playstyle: Competitor, Genre: Infinite Runner / Side Scroller
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+</li>
+
+<li>
+Is the game too fast or too slow at the start, and should the game speed up as you go?
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+</li>
+
+<li>
+I want players to overcome the initial difficulty of matching the colors and I want to see how far they can get.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+</li>
+
+<li>
+The game begins when the player hits space. This will change their color to blue, and will cause the first row of blocks to appear. At this point, the player is the right color to pass through the blocks. Afterwards, they will be presented with the next row, where they will probably have to change their color again. I hope this serves as a good tutorial for the player to get them started. The core mechanic of this game is to change your color to match the blocks and see how far you can get.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+</li>
+
+<li>
+After you get down the pattern to change your color, it becomes quite easy to get pretty far.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+</li>
+
+<li>
+As you were testing out a new VR headset, a power surge trapped your consciousness in Cyberspace. Now you must pass through the firewalls in your path and find your way out, and back into the real world.
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+</li>
+
+<li>
+People that to play simple games that require some skill.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+</li>
+
+<li>
+Around a minute.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
