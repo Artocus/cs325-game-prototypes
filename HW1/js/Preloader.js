@@ -54,7 +54,6 @@ class Preloader extends Phaser.Scene{
         if (this.ready == false)
         {
             this.ready = true;
-            this.scene.launch('music');
             this.scene.start('game');
         }
     
