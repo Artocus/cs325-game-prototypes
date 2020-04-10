@@ -22,8 +22,8 @@ class LoadSong extends Phaser.Scene{
     
         //	Here we load the rest of the assets our game needs.
         //	As this is just a Project Template I've not provided these assets, swap them for your own.
-        //this.load.text('song', 'assets/The_Melancholy_of_Haruhi_Suzumiya_-_God_Knows..._lead.abc');
-        this.load.text('song', 'assets/Cowboy_Bebop_-_Tank_Lead.abc');
+        this.load.text('song', 'assets/The_Melancholy_of_Haruhi_Suzumiya_-_God_Knows..._lead.abc');
+        //this.load.text('song', 'assets/Cowboy_Bebop_-_Tank_Lead.abc');
         //this.load.text('song', 'assets/Attack_On_Titan_-_Feuerroter_Pfeil_Und_Bogen_Lead.abc');
     }
     
