@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ABC's of Rock and Roll</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>ABC's of Rock and Roll</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+</li>
+
+<li>
+It's a Guitar Hero style rhythm game where the song are generated from sheet music.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+</li>
+
+<li>
+The only sound files that come with the game are notes on a guitar, the program reads the sheet music and then plays the notes in time to make the music. This is also what it uses to determine the rhythm.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+What was the easiest or hardest part of making it?
+</li>
+
+<li>
+I learned how to read sheet music. The hardest part was trying to figure out how to take the sheet music out of the ABC file, and put it in a way that the program can run on the fly. Look at LoadSong.js for how that went.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Sheet Music: <a href="https://community.playstarbound.com/resources/mighty-music.1266/">Mighty Music 1.11</a></li>
+<li>Guitar Sounds: <a href="https://www.apronus.com/music/onlineguitar.htm">Virtual Guitar</a></li>
+<li>Atari Font: <a href="https://github.com/photonstorm/phaser3-examples/tree/master/public/assets/fonts/bitmap">Atari Classic Font</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+</li>
+
+<li>
+The game resembles Guitar Hero, except that game's maps are hand made.
+</li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+</li>
+
+<li>
+It's a Guitar Hero style rhythm game where the song are generated from sheet music.
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+</li>
+
+<li>
+N/A
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+</li>
+
+<li>
+Input: Keyboard, Randomness: Deterministic, Playstyle: Achiever, Genre: Rhythm Game
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+</li>
+
+<li>
+Is the generated level work / fun to play.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+</li>
+
+<li>
+I want them to to try to master the songs in and compete with eachother.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+</li>
+
+<li>
+After selecting their controls, players choose what song to play, play the song, and then get to see how their score compares to other players on a global leader board. Players will also have the option to upload their own songs in .abc format.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+</li>
+
+<li>
+Currently there is no penelty to just hitting all the keys as fast as you can.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+</li>
+
+<li>
+You are an alien archeologist who found an abandonded Earth in the distant furture. It is up to you and your peers to learn the world's music, but only have sheet music to go off of.
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+</li>
+
+<li>
+People that like music and rhythm games.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+</li>
+
+<li>
+The current song in the game is about 5 mins.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
