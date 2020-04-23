@@ -125,7 +125,7 @@ class SelectSong extends Phaser.Scene{
     }
 
     selectSong(){
-        this.songName = this.songs[this.selectedSong];
+        this.songName = this.songList[this.selectedSong];
         this.scene.start('loadsong');
     }
 
